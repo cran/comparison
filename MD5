@@ -1,13 +1,14 @@
-77af2635f67448b46d8150f7032bbc06 *DESCRIPTION
+d98db81fc5c1607fea71e5ebc4e18e80 *DESCRIPTION
+0636e73ff0215e8d672dc4c32c317bb3 *LICENCE
 b3362a2d965553ce258bdda127911bad *NAMESPACE
 fa6ee3e48ebad63e54220583c4cfdc05 *R/all.class.defs.r
 68bb24a3656f24cc1b522a8e47468e62 *R/calc.ece.r
 8440b6d1c8623c83b6250adda41577eb *R/calibrate.set.r
 93997214a37909743186a1f77e7481b0 *R/plot.ece.r
 25d5eb7b28fe49694d50e679b9c5ff48 *R/two.level.comparison.items.r
-f0101f14c78cd130c9c3eb6651d7473e *R/two.level.components.r
+f5990d4acc56e1d33946d7a52854784e *R/two.level.components.r
 acbcbc045214fc53fd6bb5c6418e0780 *R/two.level.density.LR.r
-7a195e90e8e654331e4d385fabe548c3 *data/glass.rda
+411ed355ca9f760fd3f08331327c63b8 *data/glass.rda
 7dc0f4960c9541cbe9aeba5b93454b42 *man/calc.ece.Rd
 ccfccf0dde3d995a6638b5a56f18264a *man/calibrate.set.Rd
 4444c7212e394016818c468a187debe2 *man/comparison-package.Rd

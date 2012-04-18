@@ -71,7 +71,12 @@ item.means <- matrix(0, nrow=n.items, ncol=n.vars); rownames(item.means) <- item
 
 
 # means for all cases not affected by imbalance - names attribute akward
-overall.means <- colMeans(dat[,data.columns], na.rm=TRUE); if(!multivariate.flag){names(overall.means) <- vars}
+# overall mean calculation now even more awkward as comMeans now fussy about
+# getting a matrix rather than a vector so colMeans OK if multivariate - otherwise mean
+if(multivariate.flag){overall.means <- colMeans(dat[,data.columns], na.rm=TRUE)}
+if(!multivariate.flag){overall.means <- mean(dat[,data.columns], na.rm=TRUE);names(overall.means) <- vars}
+#overall.means <- colMeans(dat[,data.columns], na.rm=TRUE); if(!multivariate.flag){names(overall.means) <- vars}
+
 
 
 # debugging
