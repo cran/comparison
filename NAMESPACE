@@ -1,0 +1,14 @@
+# import relevant generic methods
+importFrom("graphics", plot)
+
+# export the new S4 methods
+exportMethods("plot")
+
+# export new S4 classes
+exportClasses("ece", "compcovar", "compitem")
+
+# export the new S3 functions
+export("calc.ece", "two.level.density.LR", "two.level.comparison.items", "two.level.components") 
+
+
+
