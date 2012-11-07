@@ -8,7 +8,7 @@ exportMethods("plot")
 exportClasses("ece", "compcovar", "compitem")
 
 # export the new S3 functions
-export("calc.ece", "two.level.density.LR", "two.level.comparison.items", "two.level.components") 
+export("calc.ece", "two.level.density.LR", "two.level.normal.LR", "two.level.lindley.LR", "two.level.comparison.items", "two.level.components") 
 
 
 

@@ -1,13 +1,13 @@
-\name{two.level.density.LR}
-\alias{two.level.density.LR}
+\name{two.level.normal.LR}
+\alias{two.level.normal.LR}
 
-\title{Likelihood ratio calculation - kernel density}
+\title{Likelihood ratio calculation - normal}
 
 
 \description{Takes a \code{\linkS4class{compitem}} object which represents some control item, and a \code{\linkS4class{compitem}} object which represents a recovered item, then uses information from a \code{\linkS4class{compcovar}} object, which represents the information from the population, to calculate a likelihood ratio as a measure of the evidence given by the observations for the same/different source propositions.}
 
 
-\usage{two.level.density.LR(control, recovered, background)}
+\usage{two.level.normal.LR(control, recovered, background)}
 \arguments{
 \item{control}{a \code{\linkS4class{compitem}} object with the control item information}
 \item{recovered}{a \code{\linkS4class{compitem}} object with the recovered item information}
@@ -15,7 +15,7 @@
 }
 
 
-\details{Does the likelihood ratio calculations for a two-level model without assuming that the between items distribution is uni/multivariate normal.}
+\details{Does the likelihood ratio calculations for a two-level model assuming that the between item distribution is uni/multivariate normal.}
 
 
 \value{Returns an estimate of the likelihood ratio}
@@ -35,7 +35,7 @@
 \code{\linkS4class{compitem}}\cr
 \code{\link{two.level.comparison.items}}\cr
 \code{\link{two.level.components}}\cr
-\code{\link{two.level.normal.LR}}
+\code{\link{two.level.density.LR}}
 }
 
 
@@ -67,12 +67,12 @@ recovered.2 <- two.level.comparison.items(dat[19:24,], c(7,8,9))
 
 
 # calculate the likelihood ratio for a known
-# same source comparison - should be 20.59322
-lr.1 <- two.level.density.LR(control, recovered.1, Z)
+# same source comparison - should be 51.16539
+lr.1 <- two.level.normal.LR(control, recovered.1, Z)
 
 # calculate the likelihood ratio for a known
 # different source comparison - should be 0.02901532
-lr.2 <- two.level.density.LR(control, recovered.2, Z)
+lr.2 <- two.level.normal.LR(control, recovered.2, Z)
 }
 
 \keyword{multivariate}

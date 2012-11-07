@@ -1,13 +1,13 @@
-\name{two.level.density.LR}
-\alias{two.level.density.LR}
+\name{two.level.lindley.LR}
+\alias{two.level.lindley.LR}
 
-\title{Likelihood ratio calculation - kernel density}
+\title{Likelihood ratio calculation - normal - Lindley's approach}
 
 
 \description{Takes a \code{\linkS4class{compitem}} object which represents some control item, and a \code{\linkS4class{compitem}} object which represents a recovered item, then uses information from a \code{\linkS4class{compcovar}} object, which represents the information from the population, to calculate a likelihood ratio as a measure of the evidence given by the observations for the same/different source propositions.}
 
 
-\usage{two.level.density.LR(control, recovered, background)}
+\usage{two.level.lindley.LR(control, recovered, background)}
 \arguments{
 \item{control}{a \code{\linkS4class{compitem}} object with the control item information}
 \item{recovered}{a \code{\linkS4class{compitem}} object with the recovered item information}
@@ -15,13 +15,13 @@
 }
 
 
-\details{Does the likelihood ratio calculations for a two-level model without assuming that the between items distribution is uni/multivariate normal.}
+\details{Does the likelihood ratio calculations for a two-level model assuming that the between item distribution is univariate normal. This function is taken from the approach devised by Denis Lindley in his 1977 paper (details below) and represents the progenitor of all the functions in this package.}
 
 
 \value{Returns an estimate of the likelihood ratio}
 
 
-\references{Aitken, C.G.G. & Lucy, D. (2004) Evaluation of trace evidence in the form of multivariate data. \emph{Applied Statistics}: \bold{53}(1); 109-122.}
+\references{Lindley, D. (1977) A problem in forensic Science. \emph{Biometrika}: \bold{64}; 207-213.}
 
 
 \author{David Lucy \email{d.lucy@lancaster.ac.uk} - \url{http://www.maths.lancs.ac.uk/~lucy}}
@@ -35,6 +35,7 @@
 \code{\linkS4class{compitem}}\cr
 \code{\link{two.level.comparison.items}}\cr
 \code{\link{two.level.components}}\cr
+\code{\link{two.level.density.LR}}\cr
 \code{\link{two.level.normal.LR}}
 }
 
@@ -50,30 +51,29 @@ data(glass)
 dat <- as.data.frame(glass)
 
 # calculate a compcovar object based upon dat
-# using K, Ca and Fe - warning - could take time
-# on slower machines
-Z <- two.level.components(dat, c(7,8,9), 1)
+# using K
+Z <- two.level.components(dat, 7, 1)
 
 # calculate a compitem object representing the control item
-control <- two.level.comparison.items(dat[1:6,], c(7,8,9))
+control <- two.level.comparison.items(dat[1:6,], 7)
 
 # calculate a compitem object representing the recovered item
 # known to be from the same item (item 1)
-recovered.1 <- two.level.comparison.items(dat[7:12,], c(7,8,9))
+recovered.1 <- two.level.comparison.items(dat[7:12,], 7)
 
 # calculate a compitem object representing the recovered item
 # known to be from a different item (item 2)
-recovered.2 <- two.level.comparison.items(dat[19:24,], c(7,8,9))
+recovered.2 <- two.level.comparison.items(dat[19:24,], 7)
 
 
 # calculate the likelihood ratio for a known
-# same source comparison - should be 20.59322
-lr.1 <- two.level.density.LR(control, recovered.1, Z)
+# same source comparison - should be 6.323941
+lr.1 <- two.level.lindley.LR(control, recovered.1, Z)
 
 # calculate the likelihood ratio for a known
-# different source comparison - should be 0.02901532
-lr.2 <- two.level.density.LR(control, recovered.2, Z)
+# different source comparison - should be 0.004422907
+lr.2 <- two.level.lindley.LR(control, recovered.2, Z)
 }
 
-\keyword{multivariate}
+\keyword{univariate}
 

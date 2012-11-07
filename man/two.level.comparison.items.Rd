@@ -15,7 +15,7 @@
 }
 
 
-\details{Takes observations from the control, or recovered, item and makes them into}
+\details{Takes observations from the control, or recovered, item and makes them into and object which can be passed to either: \code{\link{two.level.density.LR}}, or, \code{\link{two.level.normal.LR}}, or, \code{\link{two.level.lindley.LR}}, for likelihood ratio calculation.}
 
 
 \value{Returns a \code{\linkS4class{compitem}} object}
@@ -34,7 +34,9 @@
 \code{\linkS4class{compitem}}\cr
 \code{\link{two.level.comparison.items}}\cr
 \code{\link{two.level.components}}\cr
-\code{\link{two.level.density.LR}}
+\code{\link{two.level.density.LR}}\cr
+\code{\link{two.level.normal.LR}}\cr
+\code{\link{two.level.lindley.LR}}
 }
 
 
