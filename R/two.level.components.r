@@ -183,8 +183,9 @@ U <- U * (n.observations / n.items) # this bit may be wrong - in so U agrees wit
 #C <- ((s.star) / (n.observations / n.items * (n.items - 1))) - (s.w / ((n.observations ^ 2 / n.items ^ 2) * (n.observations - n.items)))
 
 # this one may also be wrong - in so U agrees with previous code
-C <- (s.b / (n.items - 1)) - (s.w / ((n.observations^2 / n.items) - n.items))
-
+#C <- (s.b / (n.items - 1)) - (s.w / ((n.observations^2 / n.items) - n.items))
+# this (below) is correct by A&L2004 - thanks to Hanjing Zhang and Colin Aitken for this revision
+C <- (s.b / (n.items - 1)) - (s.w / ((n.observations^2 / n.items) - n.observations))
 
 return(new("compcovar", v.within=U, v.between=C, n.observations=n.observations, n.items=n.items, item.n=item.n, item.means=item.means, n.vars=n.vars, overall.means=overall.means, multivariate=multivariate.flag, balanced=balanced.flag, s.within=s.w, s.between=s.b, warn.type=warn.type))
 }

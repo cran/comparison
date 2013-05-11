@@ -1,5 +1,7 @@
 # import relevant generic methods
 importFrom("graphics", plot)
+importFrom("isotone", gpava)
+import(methods)
 
 # export the new S4 methods
 exportMethods("plot")

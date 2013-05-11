@@ -11,7 +11,7 @@
 calibrate.set <- function(LR.ss, LR.ds, method="raw")
 {
 # isotone() needed for gpava()
-require(isotone)
+# require(isotone) # require not needed as isotone already loaded
 
 # correction for sorting - possibly not needed for R's sorting
 # leave it in anyway

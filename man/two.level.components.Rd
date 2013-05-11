@@ -9,7 +9,7 @@
 \usage{two.level.components(dat, data.columns, item.column)}
 
 \arguments{
-\item{dat}{a matrix, or data.frame, of observations, with cases in rows, and propoerties as columns.}
+\item{dat}{a matrix, or data.frame, of observations, with cases in rows, and properties as columns.}
 \item{data.columns}{an array indicating which columns are the properties.}
 \item{item.column}{an integer indicating which column gives the item.}
 }

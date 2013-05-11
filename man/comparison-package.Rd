@@ -20,7 +20,7 @@
 
 \author{David Lucy \email{d.lucy@lancaster.ac.uk} - \url{http://www.maths.lancs.ac.uk/~lucy}}
 
-\section{Acknowledgements}{In a package of functions such as these which have undergone a long development over a number of years, it is inevitable that a number of people, besides those directly cited, have helped to correct and add to the code. These people are (in alphabetical order): Ivo Alberink (NFI), Anabel Bolck (NFI), Sonja Menges (BKA), Geoff Morrison (UNSW), Tereza Neocleous (Glasgow), Anders Nordgaard (SKL), Phil Rose (ANU), Agnieszka Rzepecka (Jagiellonian), Brad Patterson (George Mason) & Marjan Sjerps (NFI).}
+\section{Acknowledgements}{In a package of functions such as these which have undergone a long development over a number of years, it is inevitable that a number of people, besides those directly cited, have helped to correct and add to the code. These people are (in alphabetical order):Ivo Alberink (NFI), Anabel Bolck (NFI), Sonja Menges (BKA), Geoff Morrison (UNSW), Tereza Neocleous (Glasgow), Anders Nordgaard (SKL), Brad Patterson (George Mason), Phil Rose (ANU), Agnieszka Rzepecka (Jagiellonian), Marjan Sjerps (NFI) and Hanjing Zhang (Edinburgh).}
 
 
 \references{Aitken, C.G.G. & Lucy, D. (2004) Evaluation of trace evidence in the form of multivariate data. \emph{Applied Statistics}: \bold{53}(1); 109-122.}
