@@ -24,7 +24,7 @@
 \references{Aitken, C.G.G. & Lucy, D. (2004) Evaluation of trace evidence in the form of multivariate data. \emph{Applied Statistics}: \bold{53}(1); 109-122.}
 
 
-\author{David Lucy \email{d.lucy@lancaster.ac.uk} - \url{http://www.maths.lancs.ac.uk/~lucy}}
+\author{Agnieszka Martyna \email{ag.rzepecka@gmail.com} and David Lucy \email{d.lucy@lancaster.ac.uk} - \url{http://www.maths.lancs.ac.uk/~lucy}.}
 
 
 \note{Do not even think about using this function without the proper \code{\linkS4class{compcovar}} and \code{\linkS4class{compitem}} objects - it will not work.}

@@ -1,6 +1,6 @@
 Package: comparison
-Version: 1.0-0
-Date: 11/07/2012
+Version: 1.0-2
+Date: 11/06/2013
 Title: Multivariate likelihood ratio calculation and evaluation
 Author: David Lucy <d.lucy@lancaster.ac.uk>
 Maintainer: David Lucy <d.lucy@lancaster.ac.uk>
@@ -9,6 +9,7 @@ Description: Functions for calculating and evaluating likelihood ratios
 Depends: isotone, methods
 License: GPL-2
 LazyLoad: yes
-Packaged: 2012-07-12 12:04:53 UTC; lucy
+Packaged: 2013-06-11 10:07:14 UTC; lucy
+NeedsCompilation: no
 Repository: CRAN
-Date/Publication: 2012-07-16 08:41:25
+Date/Publication: 2013-06-11 14:21:28

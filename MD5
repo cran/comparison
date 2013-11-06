@@ -1,5 +1,4 @@
-078ce401446df3dfe1934ac6751ad7f6 *DESCRIPTION
-0636e73ff0215e8d672dc4c32c317bb3 *LICENCE
+084866ed64bd253a4e5a0eba2461c48e *DESCRIPTION
 793546ad8d5e04f037ebb29db00a39ae *NAMESPACE
 fa6ee3e48ebad63e54220583c4cfdc05 *R/all.class.defs.r
 68bb24a3656f24cc1b522a8e47468e62 *R/calc.ece.r
@@ -10,7 +9,7 @@ f5990d4acc56e1d33946d7a52854784e *R/two.level.components.r
 acbcbc045214fc53fd6bb5c6418e0780 *R/two.level.density.LR.r
 d6a049fc59f4a8345117746aa72e6f7b *R/two.level.lindley.LR.r
 dd93e2d96af7fa63e73d6c764c5ef0f4 *R/two.level.normal.LR.r
-ca6ff0eef4dda5fbb9caedfde306cded *data/glass.rda
+d5ac71469652cd46a8f3aff6e7c5166f *data/glass.rda
 7dc0f4960c9541cbe9aeba5b93454b42 *man/calc.ece.Rd
 ccfccf0dde3d995a6638b5a56f18264a *man/calibrate.set.Rd
 47a2d0e7476300d62b4fa333dfd7479f *man/comparison-package.Rd
@@ -23,4 +22,4 @@ af81ecc9ecb98af952a44ab7318a193e *man/two.level.comparison.items.Rd
 5e834df70e2692184a4c906b5093a245 *man/two.level.components.Rd
 b5613b10dfc98b80b6146c4698905227 *man/two.level.density.LR.Rd
 71123fe6980ddf82513f256cd163c07a *man/two.level.lindley.LR.Rd
-6b25fcd22d88e113aaab10693c0252de *man/two.level.normal.LR.Rd
+5820fa3ecc2e75fedc3edb7d793a24f1 *man/two.level.normal.LR.Rd
